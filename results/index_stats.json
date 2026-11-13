@@ -7,7 +7,7 @@
   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2 (ONNX, onnxruntime CPU)",
   "dimensions": 384,
   "max_seq_length": 256,
-  "run_at": "2026-11-13T17:45:57.334887+00:00",
+  "run_at": "2026-11-13T17:51:35.926107+00:00",
   "cost_usd": 0.0,
   "strategies": {
     "A": {
@@ -28,7 +28,7 @@
         "mean": 442.1
       },
       "approx_tokens_total": 61817,
-      "embed_seconds": 27.14,
+      "embed_seconds": 26.34,
       "embeddings_reused_from_B": false,
       "upsert_seconds": 0.17,
       "inputs_truncated_at_256_tokens": 4,
@@ -70,9 +70,9 @@
         "mean": 558.3
       },
       "approx_tokens_total": 54975,
-      "embed_seconds": 31.87,
+      "embed_seconds": 31.98,
       "embeddings_reused_from_B": false,
-      "upsert_seconds": 0.13,
+      "upsert_seconds": 0.14,
       "inputs_truncated_at_256_tokens": 21,
       "first_upsert": {
         "deleted": 0,
@@ -114,7 +114,7 @@
       "approx_tokens_total": 54975,
       "embed_seconds": 0.0,
       "embeddings_reused_from_B": true,
-      "upsert_seconds": 0.14,
+      "upsert_seconds": 0.12,
       "inputs_truncated_at_256_tokens": 0,
       "first_upsert": {
         "deleted": 0,

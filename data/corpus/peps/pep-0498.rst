@@ -1,6 +1,6 @@
 PEP: 498
 Title: Literal String Interpolation
-Author: Eric V. Smith <eric@trueblade.com>
+Author: Eric V. Smith <email redacted>
 Status: Final
 Type: Standards Track
 Created: 01-Aug-2015

@@ -1,7 +1,7 @@
 PEP: 572
 Title: Assignment Expressions
-Author: Chris Angelico <rosuav@gmail.com>, Tim Peters <tim.peters@gmail.com>,
-        Guido van Rossum <guido@python.org>
+Author: Chris Angelico <email redacted>, Tim Peters <email redacted>,
+        Guido van Rossum <email redacted>
 Status: Final
 Type: Standards Track
 Created: 28-Feb-2018

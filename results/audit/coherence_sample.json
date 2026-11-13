@@ -1,0 +1,202 @@
+[
+  {
+    "position_id": "pep-0008#u02@750",
+    "strategy": "A",
+    "chunk_id": "pep-0008#u02:A001",
+    "section": "A Foolish Consistency is the Hobgoblin of Little Minds",
+    "chunk_chars": 500,
+    "chunk_text": " that code.\n\n4. When the code needs to remain compatible with older versions of\n   Python that don't support the feature recommended by the style guide.\n\nUse 4 spaces per indentation level.\n\nContinuation lines should align wrapped elements either vertically\nusing Python's implicit line joining inside parentheses, brackets and\nbraces, or using a *hanging indent* [#fn-hi]_.  When using a hanging\nindent the following should be considered; there should be no\narguments on the first line and further i",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0008#u02@750",
+    "strategy": "B",
+    "chunk_id": "pep-0008#u02:B001",
+    "section": "Indentation",
+    "chunk_chars": 897,
+    "chunk_text": "Use 4 spaces per indentation level.\n\nContinuation lines should align wrapped elements either vertically\nusing Python's implicit line joining inside parentheses, brackets and\nbraces, or using a *hanging indent* [#fn-hi]_.  When using a hanging\nindent the following should be considered; there should be no\narguments on the first line and further indentation should be used to\nclearly distinguish itself as a continuation line:\n\n# Correct:\n\n# Aligned with opening delimiter.\n   foo = long_function_name(var_one, var_two,\n                            var_three, var_four)\n\n# Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.\n   def long_function_name(\n           var_one, var_two, var_three,\n           var_four):\n       print(var_one)\n\n# Hanging indents should add a level.\n   foo = long_function_name(\n       var_one, var_two,\n       var_three, var_four)\n\n# Wrong:",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0257#u02@755",
+    "strategy": "A",
+    "chunk_id": "pep-0257#u02:A001",
+    "section": "What is a Docstring?",
+    "chunk_chars": 500,
+    "chunk_text": "ocstrings.  Use r\"\"\"raw triple double quotes\"\"\" if you use any\nbackslashes in your docstrings.\n\nThere are two forms of docstrings: one-liners and multi-line\ndocstrings.\n\nOne-liners are for really obvious cases.  They should really fit on\none line.  For example::\n\ndef kos_root():\n        \"\"\"Return the pathname of the KOS root directory.\"\"\"\n        global _kos_root\n        if _kos_root: return _kos_root\n        ...\n\nNotes:\n\n- Triple quotes are used even though the string fits on one line.\n  This m",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0257#u02@755",
+    "strategy": "B",
+    "chunk_id": "pep-0257#u02:B001",
+    "section": "One-line Docstrings",
+    "chunk_chars": 890,
+    "chunk_text": "One-liners are for really obvious cases.  They should really fit on\none line.  For example::\n\ndef kos_root():\n        \"\"\"Return the pathname of the KOS root directory.\"\"\"\n        global _kos_root\n        if _kos_root: return _kos_root\n        ...\n\nNotes:\n\n- Triple quotes are used even though the string fits on one line.\n  This makes it easy to later expand it.\n\n- The closing quotes are on the same line as the opening quotes.  This\n  looks better for one-liners.\n\n- There's no blank line either before or after the docstring.\n\n- The docstring is a phrase ending in a period.  It prescribes the\n  function or method's effect as a command (\"Do this\", \"Return that\"),\n  not as a description; e.g. don't write \"Returns the pathname ...\".\n\n- The one-line docstring should NOT be a \"signature\" reiterating the\n  function/method parameters (which can be obtained by introspection).\n  Don't do::",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0498#u02@779",
+    "strategy": "A",
+    "chunk_id": "pep-0498#u02:A001",
+    "section": "Rationale",
+    "chunk_chars": 500,
+    "chunk_text": "sk failure'\n  >>> 'error: %s' % msg\n  'error: disk failure'\n\nBut if msg were ever to be a tuple, the same code would fail::\n\n>>> msg = ('disk failure', 32)\n  >>> 'error: %s' % msg\n  Traceback (most recent call last):\n    File \"<stdin>\", line 1, in <module>\n  TypeError: not all arguments converted during string formatting\n\nTo be defensive, the following code should be used::\n\n>>> 'error: %s' % (msg,)\n  \"error: ('disk failure', 32)\"\n\nstr.format() was added to address some of these problems with\n%-",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0498#u02@779",
+    "strategy": "B",
+    "chunk_id": "pep-0498#u02:B000",
+    "section": "Rationale",
+    "chunk_chars": 884,
+    "chunk_text": "This PEP is driven by the desire to have a simpler way to format\nstrings in Python. The existing ways of formatting are either error\nprone, inflexible, or cumbersome.\n\n%-formatting is limited as to the types it supports. Only ints, strs,\nand doubles can be formatted. All other types are either not\nsupported, or converted to one of these types before formatting. In\naddition, there's a well-known trap where a single value is passed::\n\n>>> msg = 'disk failure'\n  >>> 'error: %s' % msg\n  'error: disk failure'\n\nBut if msg were ever to be a tuple, the same code would fail::\n\n>>> msg = ('disk failure', 32)\n  >>> 'error: %s' % msg\n  Traceback (most recent call last):\n    File \"<stdin>\", line 1, in <module>\n  TypeError: not all arguments converted during string formatting\n\nTo be defensive, the following code should be used::\n\n>>> 'error: %s' % (msg,)\n  \"error: ('disk failure', 32)\"",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0557#u02@845",
+    "strategy": "A",
+    "chunk_id": "pep-0557#u02:A001",
+    "section": "Abstract",
+    "chunk_chars": 500,
+    "chunk_text": "ice, self.quantity_on_hand) == (other.name, other.unit_price, other.quantity_on_hand)\n      return NotImplemented\n  def __ne__(self, other):\n      if other.__class__ is self.__class__:\n          return (self.name, self.unit_price, self.quantity_on_hand) != (other.name, other.unit_price, other.quantity_on_hand)\n      return NotImplemented\n  def __lt__(self, other):\n      if other.__class__ is self.__class__:\n          return (self.name, self.unit_price, self.quantity_on_hand) < (other.name, other",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0557#u02@845",
+    "strategy": "B",
+    "chunk_id": "pep-0557#u02:B000",
+    "section": "Abstract",
+    "chunk_chars": 986,
+    "chunk_text": "def __init__(self, name: str, unit_price: float, quantity_on_hand: int = 0) -> None:\n      self.name = name\n      self.unit_price = unit_price\n      self.quantity_on_hand = quantity_on_hand\n  def __repr__(self):\n      return f'InventoryItem(name={self.name!r}, unit_price={self.unit_price!r}, quantity_on_hand={self.quantity_on_hand!r})'\n  def __eq__(self, other):\n      if other.__class__ is self.__class__:\n          return (self.name, self.unit_price, self.quantity_on_hand) == (other.name, other.unit_price, other.quantity_on_hand)\n      return NotImplemented\n  def __ne__(self, other):\n      if other.__class__ is self.__class__:\n          return (self.name, self.unit_price, self.quantity_on_hand) != (other.name, other.unit_price, other.quantity_on_hand)\n      return NotImplemented\n  def __lt__(self, other):\n      if other.__class__ is self.__class__:\n          return (self.name, self.unit_price, self.quantity_on_hand) < (other.name, other.unit_price, other.quantity_on_hand)",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0572#u02@833",
+    "strategy": "A",
+    "chunk_id": "pep-0572#u02:A001",
+    "section": "The importance of real code",
+    "chunk_chars": 500,
+    "chunk_text": "an for critics of the proposal to shoot down (\"that's\nobfuscated\").\n\nYet there is some use for both extremely simple and extremely complex\nexamples: they are helpful to clarify the intended semantics.\nTherefore, there will be some of each below.\n\nHowever, in order to be *compelling*, examples should be rooted in\nreal code, i.e. code that was written without any thought of this PEP,\nas part of a useful application, however large or small.  Tim Peters\nhas been extremely helpful by going over his o",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0572#u02@833",
+    "strategy": "B",
+    "chunk_id": "pep-0572#u02:B001",
+    "section": "The importance of real code",
+    "chunk_chars": 969,
+    "chunk_text": "However, in order to be *compelling*, examples should be rooted in\nreal code, i.e. code that was written without any thought of this PEP,\nas part of a useful application, however large or small.  Tim Peters\nhas been extremely helpful by going over his own personal code\nrepository and picking examples of code he had written that (in his\nview) would have been *clearer* if rewritten with (sparing) use of\nassignment expressions.  His conclusion: the current proposal would\nhave allowed a modest but clear improvement in quite a few bits of\ncode.\n\nAnother use of real code is to observe indirectly how much value\nprogrammers place on compactness.  Guido van Rossum searched through a\nDropbox code base and discovered some evidence that programmers value\nwriting fewer lines over shorter lines.\n\nCase in point: Guido found several examples where a programmer\nrepeated a subexpression, slowing down the program, in order to save\none line of code, e.g. instead of writing::",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0585#u02@900",
+    "strategy": "A",
+    "chunk_id": "pep-0585#u02:A001",
+    "section": "Implementation",
+    "chunk_chars": 500,
+    "chunk_text": "ing the same type syntax in all contexts.  This is why starting with\nPython 3.9, the following collections become generic using\n__class_getitem__() to parameterize contained types:\n\n* tuple  # typing.Tuple\n* list  # typing.List\n* dict  # typing.Dict\n* set  # typing.Set\n* frozenset  # typing.FrozenSet\n* type  # typing.Type\n* collections.deque\n* collections.defaultdict\n* collections.OrderedDict\n* collections.Counter\n* collections.ChainMap\n* collections.abc.Awaitable\n* collections.abc.Coroutine\n* c",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0585#u02@900",
+    "strategy": "B",
+    "chunk_id": "pep-0585#u02:B001",
+    "section": "Implementation",
+    "chunk_chars": 942,
+    "chunk_text": "* tuple  # typing.Tuple\n* list  # typing.List\n* dict  # typing.Dict\n* set  # typing.Set\n* frozenset  # typing.FrozenSet\n* type  # typing.Type\n* collections.deque\n* collections.defaultdict\n* collections.OrderedDict\n* collections.Counter\n* collections.ChainMap\n* collections.abc.Awaitable\n* collections.abc.Coroutine\n* collections.abc.AsyncIterable\n* collections.abc.AsyncIterator\n* collections.abc.AsyncGenerator\n* collections.abc.Iterable\n* collections.abc.Iterator\n* collections.abc.Generator\n* collections.abc.Reversible\n* collections.abc.Container\n* collections.abc.Collection\n* collections.abc.Callable\n* collections.abc.Set  # typing.AbstractSet\n* collections.abc.MutableSet\n* collections.abc.Mapping\n* collections.abc.MutableMapping\n* collections.abc.Sequence\n* collections.abc.MutableSequence\n* collections.abc.ByteString\n* collections.abc.MappingView\n* collections.abc.KeysView\n* collections.abc.ItemsView\n* collections.abc.ValuesView",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0604#u02@771",
+    "strategy": "A",
+    "chunk_id": "pep-0604#u02:A001",
+    "section": "Simplified Syntax",
+    "chunk_chars": 500,
+    "chunk_text": "be equivalent to the new union syntax\n\n::\n\nNone | t == typing.Optional[t]\n\nA new Union.__repr__() method should be implemented.\n\n::\n\nstr(int | list[str])\n  # int | list[str]\n\nstr(int | int)\n  # int\n\nThe new syntax should be accepted for calls to isinstance and issubclass as long as the Union items are valid arguments to isinstance and issubclass themselves.\n\n::\n\n# valid\n    isinstance(\"\", int | str)\n\n# invalid\n    isinstance(2, list[int]) # TypeError: isinstance() argument 2 cannot be a paramete",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0604#u02@771",
+    "strategy": "B",
+    "chunk_id": "pep-0604#u02:B001",
+    "section": "isinstance and issubclass",
+    "chunk_chars": 442,
+    "chunk_text": "The new syntax should be accepted for calls to isinstance and issubclass as long as the Union items are valid arguments to isinstance and issubclass themselves.\n\n::\n\n# valid\n    isinstance(\"\", int | str)\n\n# invalid\n    isinstance(2, list[int]) # TypeError: isinstance() argument 2 cannot be a parameterized generic\n    isinstance(1, int | list[int])\n\n# valid\n    issubclass(bool, int | float)\n\n# invalid\n    issubclass(bool, bool | list[int])",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0618#u02@869",
+    "strategy": "A",
+    "chunk_id": "pep-0618#u02:A001",
+    "section": "Motivation",
+    "chunk_chars": 500,
+    "chunk_text": ".\n\nPerhaps most convincingly, the use of zip in the standard-library\nast module created a bug in literal_eval which `silently\ndropped parts of malformed nodes\n<https://bugs.python.org/issue40355>`_::\n\n>>> from ast import Constant, Dict, literal_eval\n    >>> nasty_dict = Dict(keys=[Constant(None)], values=[])\n    >>> literal_eval(nasty_dict)  # Like eval(\"{None: }\")\n    {}\n\nIn fact, the author has `counted dozens of other call sites\n<examples_>`_ in Python's standard library and tooling where it\n",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0618#u02@869",
+    "strategy": "B",
+    "chunk_id": "pep-0618#u02:B001",
+    "section": "Motivation",
+    "chunk_chars": 184,
+    "chunk_text": "In fact, the author has `counted dozens of other call sites\n<examples_>`_ in Python's standard library and tooling where it\nwould be appropriate to enable this new feature immediately.",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0634#u02@751",
+    "strategy": "A",
+    "chunk_id": "pep-0634#u02:A001",
+    "section": "The Match Statement",
+    "chunk_chars": 500,
+    "chunk_text": "e patterns is specified below.\n\nFor context, match_stmt is a new alternative for\ncompound_statement::\n\ncompound_statement:\n      | if_stmt\n      ...\n      | match_stmt\n\nThe match and case keywords are soft keywords, i.e. they are\nnot reserved words in other grammatical contexts (including at the\nstart of a line if there is no colon where expected).  This implies\nthat they are recognized as keywords when part of a match\nstatement or case block only, and are allowed to be used in all\nother context",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0634#u02@751",
+    "strategy": "B",
+    "chunk_id": "pep-0634#u02:B000",
+    "section": "The Match Statement",
+    "chunk_chars": 982,
+    "chunk_text": "Syntax::\n\nmatch_stmt: \"match\" subject_expr ':' NEWLINE INDENT case_block+ DEDENT\n  subject_expr:\n      | star_named_expression ',' star_named_expressions?\n      | named_expression\n  case_block: \"case\" patterns [guard] ':' block\n  guard: 'if' named_expression\n\nThe rules star_named_expression, star_named_expressions,\nnamed_expression and block are part of the `standard Python\ngrammar <https://docs.python.org/3.10/reference/grammar.html>`_.\n\nThe rule patterns is specified below.\n\nFor context, match_stmt is a new alternative for\ncompound_statement::\n\ncompound_statement:\n      | if_stmt\n      ...\n      | match_stmt\n\nThe match and case keywords are soft keywords, i.e. they are\nnot reserved words in other grammatical contexts (including at the\nstart of a line if there is no colon where expected).  This implies\nthat they are recognized as keywords when part of a match\nstatement or case block only, and are allowed to be used in all\nother contexts as variable or argument names.",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0636#u02@780",
+    "strategy": "A",
+    "chunk_id": "pep-0636#u02:A001",
+    "section": "Matching sequences",
+    "chunk_chars": 500,
+    "chunk_text": "y two elements. This is called **matching**\n* It will bind some names in the pattern to component elements of your subject. In\n  this case, if the list has two elements, it will bind action = subject[0] and\n  obj = subject[1].\n\nIf there's a match, the statements inside the case block will be executed with the\nbound variables. If there's no match, nothing happens and the statement after\nmatch is executed next.\n\nNote that, in a similar way to unpacking assignments, you can use either parenthesis,\n",
+    "score_0_2": "",
+    "reason": ""
+  },
+  {
+    "position_id": "pep-0636#u02@780",
+    "strategy": "B",
+    "chunk_id": "pep-0636#u02:B000",
+    "section": "Matching sequences",
+    "chunk_chars": 862,
+    "chunk_text": "You can use a matching statement instead::\n\nmatch command.split():\n       case [action, obj]:\n           ... # interpret action, obj\n\nThe match statement evaluates the **\"subject\"** (the value after the match\nkeyword), and checks it against the **pattern** (the code next to case). A pattern\nis able to do two different things:\n\n* Verify that the subject has certain structure. In your case, the [action, obj]\n  pattern matches any sequence of exactly two elements. This is called **matching**\n* It will bind some names in the pattern to component elements of your subject. In\n  this case, if the list has two elements, it will bind action = subject[0] and\n  obj = subject[1].\n\nIf there's a match, the statements inside the case block will be executed with the\nbound variables. If there's no match, nothing happens and the statement after\nmatch is executed next.",
+    "score_0_2": "",
+    "reason": ""
+  }
+]

@@ -1,7 +1,7 @@
 {
   "embedding_model": "sentence-transformers/all-MiniLM-L6-v2 (ONNX, onnxruntime CPU)",
   "top_k": 3,
-  "eval_seconds_total": 3.31,
+  "eval_seconds_total": 3.32,
   "rows": [
     {
       "strategy": "A",

@@ -1,6 +1,6 @@
 PEP: 585
 Title: Type Hinting Generics In Standard Collections
-Author: Łukasz Langa <lukasz@python.org>
+Author: Łukasz Langa <email redacted>
 Discussions-To: typing-sig@python.org
 Status: Final
 Type: Standards Track

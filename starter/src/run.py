@@ -99,6 +99,8 @@ def cmd_ingest() -> list[DocumentPage]:
             "source_path_or_url": rel,
             "upstream_url": f"https://github.com/python/peps/blob/{SOURCE_COMMIT}/peps/{path.name}",
             "snapshot": f"python/peps@{SOURCE_COMMIT}",
+            "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' "
+                                  "(header is not used as content); body unchanged",
             "license_or_permission": license_line,
             "accessed_at": ACCESSED_AT,
             "pep_type": doc_meta["pep_type"], "status": doc_meta["status"],

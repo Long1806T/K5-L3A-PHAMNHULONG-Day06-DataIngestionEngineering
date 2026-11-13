@@ -1,8 +1,8 @@
 PEP: 604
 Title: Allow writing union types as ``X | Y``
-Author: Philippe PRADOS <python@prados.fr>, Maggie Moss <maggiebmoss@gmail.com>
-Sponsor: Chris Angelico <rosuav@gmail.com>
-BDFL-Delegate: Guido van Rossum <guido@python.org>
+Author: Philippe PRADOS <email redacted>, Maggie Moss <email redacted>
+Sponsor: Chris Angelico <email redacted>
+BDFL-Delegate: Guido van Rossum <email redacted>
 Discussions-To: typing-sig@python.org
 Status: Final
 Type: Standards Track

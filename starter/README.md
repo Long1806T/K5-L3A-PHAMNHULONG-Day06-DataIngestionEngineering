@@ -1,5 +1,10 @@
 # Starter · PostgreSQL + pgvector
 
+> **Trạng thái trong bài nộp này:** các hàm TODO trong `src/` đã được hiện thực. Lệnh chạy và kết quả xem ở [README gốc](../README.md#bài-làm--phạm-như-long-2a202603395-l3a). Khác biệt so với starter:
+> - `store.py` gọi PostgreSQL qua client `psql` (biến `PSQL_BIN`), không qua psycopg.
+> - Embedding là model local ONNX (`scripts/download_model.sh`, kiểm tra bằng `scripts/check_embedder.py`).
+> - Có thêm `scripts/audit_metrics.py` để tổng hợp các nhãn chấm thủ công.
+
 Bộ khởi động **tùy chọn** cho lab cá nhân. Docker Compose tạo PostgreSQL + pgvector local; các file trong `src/` là **khung pseudocode có TODO**, chưa đọc tài liệu, tạo embedding, lưu vector hay chạy benchmark. Bạn cần tự hiện thực. Vẫn có thể chọn Qdrant, Chroma hoặc vector store tương đương theo [GUIDE.md](../GUIDE.md).
 
 ## Cấu trúc

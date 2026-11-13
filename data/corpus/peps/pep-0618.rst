@@ -1,8 +1,8 @@
 PEP: 618
 Title: Add Optional Length-Checking To zip
-Author: Brandt Bucher <brandt@python.org>
-Sponsor: Antoine Pitrou <antoine@python.org>
-BDFL-Delegate: Guido van Rossum <guido@python.org>
+Author: Brandt Bucher <email redacted>
+Sponsor: Antoine Pitrou <email redacted>
+BDFL-Delegate: Guido van Rossum <email redacted>
 Status: Final
 Type: Standards Track
 Created: 01-May-2020

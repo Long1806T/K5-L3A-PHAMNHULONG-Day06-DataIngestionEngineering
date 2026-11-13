@@ -1,0 +1,29 @@
+# python -m src.run all  —  started 2026-11-13T17:51:35Z
+Python 3.13.18
+onnxruntime 1.29.0 | numpy 2.5.3 | pypdf 6.17.0
+psql (PostgreSQL) 16.15 (Ubuntu 16.15-0ubuntu0.24.04.1)
+ingest: 10 files -> 130 units (130 >= 1500 chars)
+{
+  "questions": 22,
+  "splits": {
+    "dev": 16,
+    "test": 6
+  },
+  "filter_questions": {
+    "dev": 3,
+    "test": 1
+  },
+  "problems": [],
+  "ok": true
+}
+index A: 553 chunks, embed 26.3s, upsert 0.2s, re-ingest {'deleted': 0, 'inserted': 0, 'updated': 0, 'batch': 553, 'unchanged': 553}, rows {'rows': 553, 'distinct_ids': 553}
+index B: 399 chunks, embed 32.0s, upsert 0.1s, re-ingest {'deleted': 0, 'inserted': 0, 'updated': 0, 'batch': 399, 'unchanged': 399}, rows {'rows': 399, 'distinct_ids': 399}
+index C: 399 chunks, embed 0.0s, upsert 0.1s, re-ingest {'deleted': 0, 'inserted': 0, 'updated': 0, 'batch': 399, 'unchanged': 399}, rows {'rows': 399, 'distinct_ids': 399}
+A dev  Hit@1 4/16  EvHit@3 10/16  filter N/A/0
+A test Hit@1 1/6  EvHit@3 3/6  filter N/A/0
+B dev  Hit@1 5/16  EvHit@3 10/16  filter N/A/0
+B test Hit@1 2/6  EvHit@3 3/6  filter N/A/0
+C dev  Hit@1 5/16  EvHit@3 10/16  filter 3/3
+C test Hit@1 2/6  EvHit@3 3/6  filter 1/1
+audit-samples: 20 coherence rows written
+# finished 2026-11-13T17:52:41Z, wall time 65.7 s

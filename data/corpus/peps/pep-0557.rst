@@ -1,6 +1,6 @@
 PEP: 557
 Title: Data Classes
-Author: Eric V. Smith <eric@trueblade.com>
+Author: Eric V. Smith <email redacted>
 Status: Final
 Type: Standards Track
 Created: 02-Jun-2017

@@ -1,7 +1,7 @@
 PEP: 257
 Title: Docstring Conventions
-Author: David Goodger <goodger@python.org>,
-        Guido van Rossum <guido@python.org>
+Author: David Goodger <email redacted>,
+        Guido van Rossum <email redacted>
 Discussions-To: doc-sig@python.org
 Status: Active
 Type: Informational

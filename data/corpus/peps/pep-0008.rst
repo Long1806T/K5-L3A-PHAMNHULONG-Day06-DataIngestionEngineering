@@ -1,8 +1,8 @@
 PEP: 8
 Title: Style Guide for Python Code
-Author: Guido van Rossum <guido@python.org>,
-        Barry Warsaw <barry@python.org>,
-        Alyssa Coghlan <ncoghlan@gmail.com>
+Author: Guido van Rossum <email redacted>,
+        Barry Warsaw <email redacted>,
+        Alyssa Coghlan <email redacted>
 Status: Active
 Type: Process
 Created: 05-Jul-2001

@@ -1,7 +1,7 @@
 PEP: 636
 Title: Structural Pattern Matching: Tutorial
-Author: Daniel F Moisset <dfmoisset@gmail.com>
-Sponsor: Guido van Rossum <guido@python.org>
+Author: Daniel F Moisset <email redacted>
+Sponsor: Guido van Rossum <email redacted>
 BDFL-Delegate:
 Discussions-To: python-dev@python.org
 Status: Final

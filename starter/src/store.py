@@ -13,7 +13,6 @@ Search is exact (sequential scan, no ANN index), cosine distance ``<=>``.
 """
 from __future__ import annotations
 
-import csv
 import hashlib
 import io
 import json

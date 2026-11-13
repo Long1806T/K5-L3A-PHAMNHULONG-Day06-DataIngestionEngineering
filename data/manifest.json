@@ -11,6 +11,7 @@
       "source_path_or_url": "data/corpus/peps/pep-0008.rst",
       "upstream_url": "https://github.com/python/peps/blob/2a71e92663616ff5b2c3085ac8ed4f29d38e83d4/peps/pep-0008.rst",
       "snapshot": "python/peps@2a71e92663616ff5b2c3085ac8ed4f29d38e83d4",
+      "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' (header is not used as content); body unchanged",
       "license_or_permission": "This document has been placed in the public domain.",
       "accessed_at": "2026-11-14",
       "pep_type": "Process",
@@ -18,7 +19,7 @@
       "python_version": "none",
       "created": "05-Jul-2001",
       "physical_pages": "N/A (reStructuredText, no pagination)",
-      "raw_chars": 50782,
+      "raw_chars": 50774,
       "units": [
         {
           "unit_id": "pep-0008#u01",
@@ -186,6 +187,7 @@
       "source_path_or_url": "data/corpus/peps/pep-0257.rst",
       "upstream_url": "https://github.com/python/peps/blob/2a71e92663616ff5b2c3085ac8ed4f29d38e83d4/peps/pep-0257.rst",
       "snapshot": "python/peps@2a71e92663616ff5b2c3085ac8ed4f29d38e83d4",
+      "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' (header is not used as content); body unchanged",
       "license_or_permission": "This document has been placed in the public domain.",
       "accessed_at": "2026-11-14",
       "pep_type": "Informational",
@@ -193,7 +195,7 @@
       "python_version": "none",
       "created": "29-May-2001",
       "physical_pages": "N/A (reStructuredText, no pagination)",
-      "raw_chars": 10581,
+      "raw_chars": 10575,
       "units": [
         {
           "unit_id": "pep-0257#u01",
@@ -235,6 +237,7 @@
       "source_path_or_url": "data/corpus/peps/pep-0498.rst",
       "upstream_url": "https://github.com/python/peps/blob/2a71e92663616ff5b2c3085ac8ed4f29d38e83d4/peps/pep-0498.rst",
       "snapshot": "python/peps@2a71e92663616ff5b2c3085ac8ed4f29d38e83d4",
+      "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' (header is not used as content); body unchanged",
       "license_or_permission": "This document has been placed in the public domain.",
       "accessed_at": "2026-11-14",
       "pep_type": "Standards Track",
@@ -242,7 +245,7 @@
       "python_version": "3.6",
       "created": "01-Aug-2015",
       "physical_pages": "N/A (reStructuredText, no pagination)",
-      "raw_chars": 25103,
+      "raw_chars": 25099,
       "units": [
         {
           "unit_id": "pep-0498#u01",
@@ -332,6 +335,7 @@
       "source_path_or_url": "data/corpus/peps/pep-0557.rst",
       "upstream_url": "https://github.com/python/peps/blob/2a71e92663616ff5b2c3085ac8ed4f29d38e83d4/peps/pep-0557.rst",
       "snapshot": "python/peps@2a71e92663616ff5b2c3085ac8ed4f29d38e83d4",
+      "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' (header is not used as content); body unchanged",
       "license_or_permission": "This document has been placed in the public domain.",
       "accessed_at": "2026-11-14",
       "pep_type": "Standards Track",
@@ -339,7 +343,7 @@
       "python_version": "3.7",
       "created": "02-Jun-2017",
       "physical_pages": "N/A (reStructuredText, no pagination)",
-      "raw_chars": 36434,
+      "raw_chars": 36430,
       "units": [
         {
           "unit_id": "pep-0557#u01",
@@ -465,6 +469,7 @@
       "source_path_or_url": "data/corpus/peps/pep-0572.rst",
       "upstream_url": "https://github.com/python/peps/blob/2a71e92663616ff5b2c3085ac8ed4f29d38e83d4/peps/pep-0572.rst",
       "snapshot": "python/peps@2a71e92663616ff5b2c3085ac8ed4f29d38e83d4",
+      "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' (header is not used as content); body unchanged",
       "license_or_permission": "This document has been placed in the public domain.",
       "accessed_at": "2026-11-14",
       "pep_type": "Standards Track",
@@ -472,7 +477,7 @@
       "python_version": "3.8",
       "created": "28-Feb-2018",
       "physical_pages": "N/A (reStructuredText, no pagination)",
-      "raw_chars": 47028,
+      "raw_chars": 47018,
       "units": [
         {
           "unit_id": "pep-0572#u01",
@@ -640,6 +645,7 @@
       "source_path_or_url": "data/corpus/peps/pep-0585.rst",
       "upstream_url": "https://github.com/python/peps/blob/2a71e92663616ff5b2c3085ac8ed4f29d38e83d4/peps/pep-0585.rst",
       "snapshot": "python/peps@2a71e92663616ff5b2c3085ac8ed4f29d38e83d4",
+      "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' (header is not used as content); body unchanged",
       "license_or_permission": "This document is placed in the public domain or under the CC0-1.0-Universal license, whichever is more permissive.",
       "accessed_at": "2026-11-14",
       "pep_type": "Standards Track",
@@ -647,7 +653,7 @@
       "python_version": "3.9",
       "created": "03-Mar-2019",
       "physical_pages": "N/A (reStructuredText, no pagination)",
-      "raw_chars": 13299,
+      "raw_chars": 13296,
       "units": [
         {
           "unit_id": "pep-0585#u01",
@@ -695,6 +701,7 @@
       "source_path_or_url": "data/corpus/peps/pep-0604.rst",
       "upstream_url": "https://github.com/python/peps/blob/2a71e92663616ff5b2c3085ac8ed4f29d38e83d4/peps/pep-0604.rst",
       "snapshot": "python/peps@2a71e92663616ff5b2c3085ac8ed4f29d38e83d4",
+      "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' (header is not used as content); body unchanged",
       "license_or_permission": "This document is placed in the public domain or under the CC0-1.0-Universal license, whichever is more permissive.",
       "accessed_at": "2026-11-14",
       "pep_type": "Standards Track",
@@ -702,7 +709,7 @@
       "python_version": "3.10",
       "created": "28-Aug-2019",
       "physical_pages": "N/A (reStructuredText, no pagination)",
-      "raw_chars": 7043,
+      "raw_chars": 7030,
       "units": [
         {
           "unit_id": "pep-0604#u01",
@@ -732,6 +739,7 @@
       "source_path_or_url": "data/corpus/peps/pep-0618.rst",
       "upstream_url": "https://github.com/python/peps/blob/2a71e92663616ff5b2c3085ac8ed4f29d38e83d4/peps/pep-0618.rst",
       "snapshot": "python/peps@2a71e92663616ff5b2c3085ac8ed4f29d38e83d4",
+      "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' (header is not used as content); body unchanged",
       "license_or_permission": "This document is placed in the public domain or under the CC0-1.0-Universal license, whichever is more permissive.",
       "accessed_at": "2026-11-14",
       "pep_type": "Standards Track",
@@ -739,7 +747,7 @@
       "python_version": "3.10",
       "created": "01-May-2020",
       "physical_pages": "N/A (reStructuredText, no pagination)",
-      "raw_chars": 15469,
+      "raw_chars": 15460,
       "units": [
         {
           "unit_id": "pep-0618#u01",
@@ -793,6 +801,7 @@
       "source_path_or_url": "data/corpus/peps/pep-0634.rst",
       "upstream_url": "https://github.com/python/peps/blob/2a71e92663616ff5b2c3085ac8ed4f29d38e83d4/peps/pep-0634.rst",
       "snapshot": "python/peps@2a71e92663616ff5b2c3085ac8ed4f29d38e83d4",
+      "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' (header is not used as content); body unchanged",
       "license_or_permission": "This document is placed in the public domain or under the CC0-1.0-Universal license, whichever is more permissive.",
       "accessed_at": "2026-11-14",
       "pep_type": "Standards Track",
@@ -800,7 +809,7 @@
       "python_version": "3.10",
       "created": "12-Sep-2020",
       "physical_pages": "N/A (reStructuredText, no pagination)",
-      "raw_chars": 23168,
+      "raw_chars": 23163,
       "units": [
         {
           "unit_id": "pep-0634#u01",
@@ -884,6 +893,7 @@
       "source_path_or_url": "data/corpus/peps/pep-0636.rst",
       "upstream_url": "https://github.com/python/peps/blob/2a71e92663616ff5b2c3085ac8ed4f29d38e83d4/peps/pep-0636.rst",
       "snapshot": "python/peps@2a71e92663616ff5b2c3085ac8ed4f29d38e83d4",
+      "local_copy_changes": "author e-mail addresses in the header replaced by '<email redacted>' (header is not used as content); body unchanged",
       "license_or_permission": "This document is placed in the public domain or under the CC0-1.0-Universal license, whichever is more permissive.",
       "accessed_at": "2026-11-14",
       "pep_type": "Informational",
@@ -891,7 +901,7 @@
       "python_version": "3.10",
       "created": "12-Sep-2020",
       "physical_pages": "N/A (reStructuredText, no pagination)",
-      "raw_chars": 25325,
+      "raw_chars": 25318,
       "units": [
         {
           "unit_id": "pep-0636#u01",
