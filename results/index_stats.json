@@ -1,0 +1,154 @@
+{
+  "server": {
+    "db": "day6_lab",
+    "pg": "16.15 (Ubuntu 16.15-0ubuntu0.24.04.1)",
+    "pgvector": "0.8.7"
+  },
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2 (ONNX, onnxruntime CPU)",
+  "dimensions": 384,
+  "max_seq_length": 256,
+  "run_at": "2026-11-13T17:45:57.334887+00:00",
+  "cost_usd": 0.0,
+  "strategies": {
+    "A": {
+      "config": {
+        "chunking": "fixed_size",
+        "size": 500,
+        "overlap": 50,
+        "filter": false
+      },
+      "chunk_length_chars": {
+        "count": 553,
+        "total_chars": 244456,
+        "min": 51,
+        "p25": 500,
+        "median": 500,
+        "p75": 500,
+        "max": 500,
+        "mean": 442.1
+      },
+      "approx_tokens_total": 61817,
+      "embed_seconds": 27.14,
+      "embeddings_reused_from_B": false,
+      "upsert_seconds": 0.17,
+      "inputs_truncated_at_256_tokens": 4,
+      "first_upsert": {
+        "deleted": 0,
+        "inserted": 553,
+        "updated": 0,
+        "batch": 553,
+        "unchanged": 0
+      },
+      "reingest_same_version": {
+        "deleted": 0,
+        "inserted": 0,
+        "updated": 0,
+        "batch": 553,
+        "unchanged": 553
+      },
+      "rows_after_reingest": {
+        "rows": 553,
+        "distinct_ids": 553
+      },
+      "duplicates_after_reingest": 0
+    },
+    "B": {
+      "config": {
+        "chunking": "by_paragraph",
+        "max_size": 1000,
+        "overlap": 0,
+        "filter": false
+      },
+      "chunk_length_chars": {
+        "count": 399,
+        "total_chars": 222772,
+        "min": 40,
+        "p25": 317,
+        "median": 560,
+        "p75": 814,
+        "max": 1000,
+        "mean": 558.3
+      },
+      "approx_tokens_total": 54975,
+      "embed_seconds": 31.87,
+      "embeddings_reused_from_B": false,
+      "upsert_seconds": 0.13,
+      "inputs_truncated_at_256_tokens": 21,
+      "first_upsert": {
+        "deleted": 0,
+        "inserted": 399,
+        "updated": 0,
+        "batch": 399,
+        "unchanged": 0
+      },
+      "reingest_same_version": {
+        "deleted": 0,
+        "inserted": 0,
+        "updated": 0,
+        "batch": 399,
+        "unchanged": 399
+      },
+      "rows_after_reingest": {
+        "rows": 399,
+        "distinct_ids": 399
+      },
+      "duplicates_after_reingest": 0
+    },
+    "C": {
+      "config": {
+        "chunking": "by_paragraph",
+        "max_size": 1000,
+        "overlap": 0,
+        "filter": true
+      },
+      "chunk_length_chars": {
+        "count": 399,
+        "total_chars": 222772,
+        "min": 40,
+        "p25": 317,
+        "median": 560,
+        "p75": 814,
+        "max": 1000,
+        "mean": 558.3
+      },
+      "approx_tokens_total": 54975,
+      "embed_seconds": 0.0,
+      "embeddings_reused_from_B": true,
+      "upsert_seconds": 0.14,
+      "inputs_truncated_at_256_tokens": 0,
+      "first_upsert": {
+        "deleted": 0,
+        "inserted": 399,
+        "updated": 0,
+        "batch": 399,
+        "unchanged": 0
+      },
+      "reingest_same_version": {
+        "deleted": 0,
+        "inserted": 0,
+        "updated": 0,
+        "batch": 399,
+        "unchanged": 399
+      },
+      "rows_after_reingest": {
+        "rows": 399,
+        "distinct_ids": 399
+      },
+      "duplicates_after_reingest": 0
+    }
+  },
+  "changed_document_check": {
+    "document": "pep-0604",
+    "rows_before": 14,
+    "edit": "first chunk text changed, last 2 chunks removed",
+    "upsert_result": {
+      "deleted": 2,
+      "inserted": 0,
+      "updated": 1,
+      "batch": 12,
+      "unchanged": 11
+    },
+    "rows_after": 12,
+    "ok": true
+  }
+}

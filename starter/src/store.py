@@ -96,7 +96,21 @@ CREATE INDEX IF NOT EXISTS {TABLE}_filter_idx ON {TABLE} (strategy, pep_type, py
         if len(set(ids)) != len(ids):
             raise ValueError("duplicate chunk_id in batch")
         buf = io.StringIO()
-        writer = csv.writer(buf)
+
+        class _TextCopyWriter:  # COPY text format: one physical line per row, escaped
+            @staticmethod
+            def writerow(values: list) -> None:
+                out = []
+                for val in values:
+                    if val is None:
+                        out.append(r"\N")
+                    else:
+                        s = str(val).replace("\\", "\\\\").replace("\n", "\\n") \
+                            .replace("\r", "\\r").replace("\t", "\\t")
+                        out.append(s)
+                buf.write("\t".join(out) + "\n")
+
+        writer = _TextCopyWriter()
         for c, v in zip(chunks, vectors):
             if len(v) != self.dimensions:
                 raise ValueError(f"vector for {c.chunk_id} has {len(v)} dims, expected {self.dimensions}")
@@ -111,7 +125,7 @@ CREATE INDEX IF NOT EXISTS {TABLE}_filter_idx ON {TABLE} (strategy, pep_type, py
         script = f"""
 BEGIN;
 CREATE TEMP TABLE staging (LIKE {TABLE} INCLUDING DEFAULTS) ON COMMIT DROP;
-COPY staging ({cols}) FROM STDIN WITH (FORMAT csv);
+COPY staging ({cols}) FROM STDIN WITH (FORMAT text);
 {buf.getvalue()}\\.
 WITH del AS (
   DELETE FROM {TABLE} t

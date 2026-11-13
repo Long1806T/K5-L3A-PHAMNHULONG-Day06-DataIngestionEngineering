@@ -1,0 +1,67 @@
+id,split,type,filter,strategy,hit_at_1,hit_at_3,first_hit_rank,loc_without_full_evidence,top1_unit,top2_unit,top3_unit
+d01,dev,direct,,A,1,1,1,0,pep-0008#u02,pep-0572#u10,pep-0008#u04
+d01,dev,direct,,B,0,0,,0,pep-0008#u04,pep-0572#u10,pep-0008#u03
+d01,dev,direct,,C,0,0,,0,pep-0008#u04,pep-0572#u10,pep-0008#u03
+d02,dev,direct,,A,0,0,,0,pep-0008#u05,pep-0572#u10,pep-0008#u01
+d02,dev,direct,,B,0,0,,0,pep-0008#u05,pep-0008#u02,pep-0572#u10
+d02,dev,direct,,C,0,0,,0,pep-0008#u05,pep-0008#u02,pep-0572#u10
+d03,dev,paraphrase,,A,0,0,,1,pep-0008#u06,pep-0008#u06,pep-0008#u06
+d03,dev,paraphrase,,B,0,1,2,0,pep-0008#u05,pep-0008#u06,pep-0008#u06
+d03,dev,paraphrase,,C,0,1,2,0,pep-0008#u05,pep-0008#u06,pep-0008#u06
+d04,dev,conditional,,A,0,0,,0,pep-0008#u24,pep-0572#u20,pep-0572#u19
+d04,dev,conditional,,B,0,0,,1,pep-0572#u20,pep-0008#u21,pep-0636#u03
+d04,dev,conditional,,C,0,0,,1,pep-0572#u20,pep-0008#u21,pep-0636#u03
+d05,dev,paraphrase,,A,1,1,1,0,pep-0008#u07,pep-0008#u08,pep-0008#u17
+d05,dev,paraphrase,,B,0,1,2,0,pep-0008#u20,pep-0008#u07,pep-0008#u08
+d05,dev,paraphrase,,C,0,1,2,0,pep-0008#u20,pep-0008#u07,pep-0008#u08
+d06,dev,direct,,A,0,1,3,0,pep-0257#u03,pep-0008#u14,pep-0257#u02
+d06,dev,direct,,B,0,0,,1,pep-0257#u03,pep-0257#u02,pep-0008#u09
+d06,dev,direct,,C,0,0,,1,pep-0257#u03,pep-0257#u02,pep-0008#u09
+d07,dev,conditional,,A,0,1,2,0,pep-0498#u06,pep-0498#u06,pep-0498#u05
+d07,dev,conditional,,B,1,1,1,0,pep-0498#u06,pep-0498#u05,pep-0498#u06
+d07,dev,conditional,,C,1,1,1,0,pep-0498#u06,pep-0498#u05,pep-0498#u06
+d08,dev,direct,,A,0,1,3,0,pep-0498#u05,pep-0498#u01,pep-0498#u08
+d08,dev,direct,,B,1,1,1,0,pep-0498#u08,pep-0498#u05,pep-0498#u04
+d08,dev,direct,,C,1,1,1,0,pep-0498#u08,pep-0498#u05,pep-0498#u04
+d09,dev,direct,,A,0,0,,1,pep-0557#u07,pep-0557#u11,pep-0008#u19
+d09,dev,direct,,B,0,1,3,0,pep-0557#u07,pep-0557#u06,pep-0557#u11
+d09,dev,direct,,C,0,1,3,0,pep-0557#u07,pep-0557#u06,pep-0557#u11
+d10,dev,exception,,A,0,1,2,0,pep-0557#u09,pep-0557#u12,pep-0557#u13
+d10,dev,exception,,B,0,1,3,0,pep-0557#u09,pep-0557#u13,pep-0557#u12
+d10,dev,exception,,C,0,1,3,0,pep-0557#u09,pep-0557#u13,pep-0557#u12
+d11,dev,conditional,,A,0,1,2,0,pep-0572#u09,pep-0572#u04,pep-0572#u04
+d11,dev,conditional,,B,1,1,1,0,pep-0572#u04,pep-0572#u15,pep-0572#u10
+d11,dev,conditional,,C,1,1,1,0,pep-0572#u04,pep-0572#u15,pep-0572#u10
+d12,dev,exception,,A,0,0,,1,pep-0572#u07,pep-0572#u07,pep-0572#u09
+d12,dev,exception,,B,0,0,,1,pep-0572#u09,pep-0572#u07,pep-0572#u15
+d12,dev,exception,,C,0,0,,1,pep-0572#u09,pep-0572#u07,pep-0572#u15
+d13,dev,metadata_filter,"{""pep_type"": ""Informational""}",A,0,0,,0,pep-0636#u07,pep-0636#u03,pep-0634#u04
+d13,dev,metadata_filter,"{""pep_type"": ""Informational""}",B,0,0,,0,pep-0636#u03,pep-0636#u13,pep-0634#u05
+d13,dev,metadata_filter,"{""pep_type"": ""Informational""}",C,0,0,,0,pep-0636#u03,pep-0636#u13,pep-0636#u11
+d14,dev,metadata_filter,"{""python_version"": ""3.10""}",A,0,1,2,0,pep-0618#u03,pep-0618#u03,pep-0618#u01
+d14,dev,metadata_filter,"{""python_version"": ""3.10""}",B,1,1,1,0,pep-0618#u03,pep-0618#u06,pep-0618#u01
+d14,dev,metadata_filter,"{""python_version"": ""3.10""}",C,1,1,1,0,pep-0618#u03,pep-0618#u06,pep-0618#u01
+d15,dev,metadata_filter,"{""pep_type"": ""Standards Track""}",A,1,1,1,0,pep-0634#u03,pep-0634#u03,pep-0634#u11
+d15,dev,metadata_filter,"{""pep_type"": ""Standards Track""}",B,1,1,1,0,pep-0634#u03,pep-0634#u11,pep-0634#u02
+d15,dev,metadata_filter,"{""pep_type"": ""Standards Track""}",C,1,1,1,0,pep-0634#u03,pep-0634#u11,pep-0634#u02
+d16,dev,exception,,A,1,1,1,0,pep-0585#u04,pep-0585#u06,pep-0585#u04
+d16,dev,exception,,B,0,1,2,0,pep-0585#u06,pep-0585#u04,pep-0604#u02
+d16,dev,exception,,C,0,1,2,0,pep-0585#u06,pep-0585#u04,pep-0604#u02
+t01,test,direct,,A,0,1,3,0,pep-0008#u14,pep-0008#u19,pep-0008#u16
+t01,test,direct,,B,1,1,1,0,pep-0008#u16,pep-0008#u14,pep-0008#u17
+t01,test,direct,,C,1,1,1,0,pep-0008#u16,pep-0008#u14,pep-0008#u17
+t02,test,paraphrase,,A,0,0,,1,pep-0557#u12,pep-0557#u19,pep-0557#u13
+t02,test,paraphrase,,B,0,0,,1,pep-0557#u12,pep-0557#u12,pep-0557#u13
+t02,test,paraphrase,,C,0,0,,1,pep-0557#u12,pep-0557#u12,pep-0557#u13
+t03,test,direct,,A,0,1,2,0,pep-0572#u06,pep-0498#u01,pep-0498#u04
+t03,test,direct,,B,0,0,,0,pep-0572#u06,pep-0498#u04,pep-0498#u07
+t03,test,direct,,C,0,0,,0,pep-0572#u06,pep-0498#u04,pep-0498#u07
+t04,test,conditional,,A,0,0,,1,pep-0572#u06,pep-0498#u12,pep-0572#u05
+t04,test,conditional,,B,0,0,,0,pep-0572#u06,pep-0572#u04,pep-0498#u12
+t04,test,conditional,,C,0,0,,0,pep-0572#u06,pep-0572#u04,pep-0498#u12
+t05,test,metadata_filter,"{""python_version"": ""3.10""}",A,0,0,,0,pep-0557#u07,pep-0557#u10,pep-0008#u26
+t05,test,metadata_filter,"{""python_version"": ""3.10""}",B,0,1,2,0,pep-0604#u03,pep-0604#u01,pep-0585#u01
+t05,test,metadata_filter,"{""python_version"": ""3.10""}",C,0,1,2,0,pep-0604#u03,pep-0604#u01,pep-0604#u01
+t06,test,paraphrase,,A,1,1,1,0,pep-0257#u03,pep-0257#u02,pep-0008#u14
+t06,test,paraphrase,,B,1,1,1,0,pep-0257#u03,pep-0257#u05,pep-0257#u05
+t06,test,paraphrase,,C,1,1,1,0,pep-0257#u03,pep-0257#u05,pep-0257#u05
