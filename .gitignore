@@ -8,3 +8,7 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+# local embedding model weights (90 MB) - see README for download
+starter/models/*/model.onnx
+starter/models/*/tokenizer.json

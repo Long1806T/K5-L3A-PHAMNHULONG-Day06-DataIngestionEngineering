@@ -1,0 +1,11 @@
+file,level,message
+data/corpus/peps/pep-0008.rst,INFO,dropped 1 paragraph(s) in Copyright/Footnotes/References sections
+data/corpus/peps/pep-0257.rst,INFO,dropped 1 paragraph(s) in Copyright/Footnotes/References sections
+data/corpus/peps/pep-0498.rst,INFO,dropped 1 paragraph(s) in Copyright/Footnotes/References sections
+data/corpus/peps/pep-0557.rst,INFO,dropped 1 paragraph(s) in Copyright/Footnotes/References sections
+data/corpus/peps/pep-0572.rst,INFO,dropped 1 paragraph(s) in Copyright/Footnotes/References sections
+data/corpus/peps/pep-0585.rst,INFO,dropped 1 paragraph(s) in Copyright/Footnotes/References sections
+data/corpus/peps/pep-0604.rst,INFO,dropped 1 paragraph(s) in Copyright/Footnotes/References sections
+data/corpus/peps/pep-0618.rst,INFO,dropped 1 paragraph(s) in Copyright/Footnotes/References sections
+data/corpus/peps/pep-0634.rst,INFO,dropped 1 paragraph(s) in Copyright/Footnotes/References sections
+data/corpus/peps/pep-0636.rst,INFO,dropped 1 paragraph(s) in Copyright/Footnotes/References sections
